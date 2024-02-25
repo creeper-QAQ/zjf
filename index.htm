@@ -46,6 +46,31 @@
 <body>
     <h1>震惊，近日高三十五班著名奶狗郑家飞发布了道歉视频，就其在十五班的口嗨行为做出了忏悔</h1>
     <p>以下是详细报道</p>
+    <style>
+        /* CSS样式略有修改，使页面布局更清晰 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* 更改背景颜色 */
+        }
+        /* 省略其他样式 */
+    </style>
+</head>
+<body>
+    <!-- 新添加的视频播放框 -->
+    <div class="video-container" onclick="playPause()"> <!-- 添加点击事件 -->
+        <video id="myVideo" controls autoplay>
+            <source src="./2.mp4" type="video/mp4"> <!-- 修改视频源为2.mp4 -->
+            Your browser does not support the video tag.
+            <track src="1.vtt" kind="subtitles" srclang="zh-CN" default label="中文">
+            <track src="2.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+        <div class="bilingual-subtitle" id="bilingual-subtitles"></div>
+    </div>
+
+    <!-- 原来的视频播放框和其他内容 -->
 
     <div class="video-container" onclick="playPause()"> <!-- 添加点击事件 -->
         <video id="myVideo" controls autoplay>
