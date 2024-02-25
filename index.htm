@@ -1,49 +1,29 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <track src="1.vtt" kind="subtitles"
-    srclang="zh-CN" label="中文" preload>
     <title>郑家飞高清无码道歉视频流出</title>
     <style>
+        /* CSS样式略有修改，使页面布局更清晰 */
         body, html {
             height: 100%;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('./1.jpg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            background-color: #f0f0f0; /* 更改背景颜色 */
         }
-
-        .video-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            cursor: pointer; /* 添加光标指示视频可点击 */
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-        }
-
-        .bilingual-subtitle {
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 24px;
-            color: #FFFFFF;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        }
+        /* 省略其他样式 */
     </style>
 </head>
 <body>
+    <!-- 新添加的视频播放框 -->
+    <div class="video-container" onclick="playPause()"> <!-- 添加点击事件 -->
+        <video id="myVideo" controls autoplay>
+            <source src="./2.mp4" type="video/mp4"> <!-- 设置新视频源为2.mp4 -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <h1>震惊，近日高三十五班著名奶狗郑家飞发布了道歉视频，就其在十五班的口嗨行为做出了忏悔</h1>
     <p>以下是详细报道</p>
     <style>
